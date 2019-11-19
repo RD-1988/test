@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MY472 - Data for Data Scientists
 
 ## Assignment 3
@@ -14,3 +15,7 @@ Note that this is an ambitious assignment, but it is broken down into very clear
 Submissions without an html file will receive 0 points.
 
 **Deadline:** November 22, 2019, 15:00pm.
+=======
+# test
+Test
+>>>>>>> 0a669abba032cfa9bf8b058787b852fe620ae0b0
