@@ -1,0 +1,29 @@
+# Part C. Querying the World Bank API
+
+1. The goal of this part of the assignment is to obtain country-level development indicators that may be related to lingustic fragmentation from the World Bank API. You can read the documentation and instructions [here](https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-basic-api-call-structures).
+
+Write a function that will take an indicator code (e.g. `SP.POP.TOTL`) as input, query the API and parse the JSON output, and then return a clean data frame where each row is a country. If you're not able to figure it out, you can also use the `WDI` package. Feel free to take a look at the code for some clues on how to query the API (see e.g. [here](https://github.com/vincentarelbundock/WDI/blob/master/R/WDI.R)). 
+
+```{r}
+
+```
+
+
+2. Using the function you just created, get country-level data on two metrics: GDP per capita and another metric that you consider could be correlated to language fractionalization. (See the Alesina et al paper for inspiration.)
+
+```{r}
+
+```
+
+3. Merge this new country-level dataset with the dataset you created at the end of part B. As before, you may need to fix some of the country names to ensure that all countries can be merged.
+
+```{r}
+
+
+```
+
+4. What can you learn about the relationship between language fractionalization and economic development from this new dataset? Can you replicate the findings in Tables 5 and 8 of the paper? Use any statistical or graphic analyses that you consider appropriate to answer this question.
+
+```{r}
+
+```

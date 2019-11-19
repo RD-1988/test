@@ -1,0 +1,59 @@
+# Part A. Collecting geolocated Twitter data.
+
+1. Collect a sample of geolocated tweets using a token created with the instructions found at https://developer.twitter.com.  The geographic bounding box can span the entire globe or -- probably better for the exercise -- just focus on a given continent (e.g. Europe or Africa). Keep the connection open for a while until you have a reasonably large sample. 100,000 to 200,000 tweets should be more than enough for this exercise.
+
+To avoid running this chunk of code every time you compile the file, you can either take this code to a separate R file, and just keep it here. (But make sure you explain that!) Or use the `cache` option in the R chunk, as shown below, to make sure it only re-runs after you change the code:
+
+```{r, cache=TRUE}
+
+```
+
+In case you don't have a working token, [here](https://www.dropbox.com/s/n7l84t6vj95ue9e/europe-tweets.csv?dl=0)'s a link to a .csv file that contains nearly 200,000 geolocated tweets from Europe.
+
+Please don't upload the .json file with the Tweets to GitHub!  We suggest you store it somewhere else in your hard drive. This is the only RMarkdown file where you'll have to work with the entire dataset. You could also keep only the relevant variables that you need (similar as the .csv file above), and save only that (smaller) file.
+
+2. Read the Tweets into R and compute some descriptive statistics. How many Tweets did you collect? Which are the most popular hashtags? (This step may take some time as well, feel free to use the cache function below to make sure you're not re-reading the file every time you compile.)
+
+```{r, cache=TRUE}
+
+```
+
+3. Now examine the language data. Which are the most popular languages? How many unique languages did you find? Can you determine which language code corresponds to tweets whose languages couldn't be predicted?
+
+```{r}
+
+```
+
+4. Produce a map of the region of the world where you collected the data that displays the language distribution by country. This map could take different forms - think which one could be best at conveying the relevant information.
+
+```{r}
+tweets = read_csv("assignment-3-RD-1988/europe-tweets.csv")
+library(maps)
+country_info <- map.where(x = c(tweets$lon), y =c(tweets$lat))
+```
+
+5. Finally, use the `map.where` function to identify the country from which each Tweet is coming from, and add it as a new variable to the data frame. Which countries produced the most and least tweets? 
+
+```{r}
+country_info <- map.where(x = c(tweets$lon), y =c(tweets$lat))
+table(country_info)[which.max(table(country_info))]
+df <- as_data_frame(table(country_language_distribution))
+df <- df[df[["n"]]>0,,]
+head(df)
+```
+
+
+Then, create a data frame with three variables: `country`, `language`, and `n_tweets` (number of tweets for each combination of country and language). To make it smaller, you can keep only the rows for which `n_tweets` is greater than 0. Save this data frame into a file called `country_language_distribution.csv` -- we will work with it in part B. 
+
+
+
+For a clue on what this dataset should look like, see the `Language data` tab in `2003_fractionalization.xls`.
+
+```{r}
+ country_language_distribution <- cbind.data.frame(country_info,lang = tweets$lang)
+ df <- as_data_frame(table(country_language_distribution))
+ df <- df %>% filter(n>0)
+ write.csv(df, "country_language_distribution.csv", row.names = FALSE)
+ df = read_csv("country_language_distribution.csv")
+ df
+```
