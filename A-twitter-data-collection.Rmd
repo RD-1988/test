@@ -76,6 +76,7 @@ For a clue on what this dataset should look like, see the `Language data` tab in
  df <- df %>% filter(n>0)
  write.csv(df, "country_language_distribution.csv", row.names = FALSE)
  df = read_csv("country_language_distribution.csv")
+df$country_info
 
  df
 ```
