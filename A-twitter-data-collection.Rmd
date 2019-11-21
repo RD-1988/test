@@ -51,9 +51,9 @@ library(readxl)
 library(tidyverse)
 library(countrycode)
 library(maps)
-tweets = read_csv("/Users/duruijia/Desktop/Tools/git/my472-hw/assignment-3-RD-1988/europe-tweets.csv")
+tweets = read_csv("myeu_tweet.csv")
 library(maps)
-country_info <- map.where(x = c(tweets$lon), y =c(tweets$lat))
+country_info <- map.where(x = c(tweets$lng), y =c(tweets$lat))
 ```
 
 5. Finally, use the `map.where` function to identify the country from which each Tweet is coming from, and add it as a new variable to the data frame. Which countries produced the most and least tweets? 

@@ -1,1247 +1,1088 @@
 "country_info","lang","n"
-"Algeria","ar",192
-"Austria","ar",14
-"Belgium","ar",11
-"Bosnia and Herzegovina","ar",2
-"Cyprus:Northern Cyprus","ar",9
-"Czech Republic","ar",12
-"Denmark","ar",2
-"Denmark:Sjaelland","ar",8
-"Finland","ar",4
-"France","ar",138
-"Georgia","ar",8
-"Germany","ar",219
-"Hungary","ar",1
-"Iraq","ar",489
-"Ireland","ar",97
-"Italy","ar",56
-"Lebanon","ar",292
-"Liechtenstein","ar",1
-"Macedonia","ar",1
-"Malta","ar",7
-"Montenegro","ar",6
-"Morocco","ar",62
-"Netherlands","ar",20
-"Norway","ar",26
-"Poland","ar",8
-"Romania","ar",6
-"Russia","ar",12
-"Saudi Arabia","ar",1
-"Slovakia","ar",5
-"Slovenia","ar",1
-"Spain","ar",54
-"Sweden","ar",44
-"Switzerland","ar",52
-"Syria","ar",56
-"Tunisia","ar",62
-"Turkey","ar",40
-"Turkey:North","ar",24
-"UK:Great Britain","ar",777
-"Ukraine","ar",34
+"Algeria","ar",150
+"Armenia","ar",1
+"Austria","ar",9
+"Azerbaijan","ar",6
+"Belgium","ar",7
+"Bosnia and Herzegovina","ar",1
+"Bulgaria","ar",3
+"Czech Republic","ar",1
+"Denmark","ar",5
+"Denmark:Sjaelland","ar",1
+"Finland","ar",2
+"France","ar",46
+"Germany","ar",78
+"Greece","ar",1
+"Iran","ar",2
+"Iraq","ar",440
+"Ireland","ar",7
+"Italy","ar",44
+"Netherlands","ar",7
+"Norway","ar",5
+"Poland","ar",5
+"Russia","ar",5
+"Spain","ar",24
+"Sweden","ar",4
+"Switzerland","ar",5
+"Syria","ar",35
+"Tunisia","ar",45
+"Turkey","ar",31
+"Turkey:North","ar",12
+"UK:Great Britain","ar",224
+"Ukraine","ar",1
+"Belarus","bg",1
+"Bosnia and Herzegovina","bg",1
 "Bulgaria","bg",24
-"Finland","bg",1
-"Germany","bg",2
-"Hungary","bg",1
-"Macedonia","bg",16
-"Netherlands","bg",1
-"Poland","bg",1
-"Russia","bg",21
+"Germany","bg",5
+"Italy","bg",1
+"Kazakhstan","bg",1
+"Macedonia","bg",2
+"Netherlands","bg",3
+"Russia","bg",16
 "Serbia","bg",1
-"Switzerland","bg",4
-"Turkey","bg",1
-"UK:Great Britain","bg",2
-"Ukraine","bg",10
-"Italy","bn",2
-"UK:Great Britain","bn",5
-"Andorra","ca",3
-"Austria","ca",3
-"Belgium","ca",2
+"Ukraine","bg",6
+"Uzbekistan","bg",4
+"Iceland","bn",2
+"Italy","bn",1
+"Andorra","ca",2
+"Austria","ca",1
+"Azerbaijan","ca",1
+"Belgium","ca",1
 "Bosnia and Herzegovina","ca",1
-"Czech Republic","ca",1
-"France","ca",46
-"Germany","ca",20
-"Greece","ca",2
-"Hungary","ca",3
-"Ireland","ca",3
-"Italy","ca",19
-"Lebanon","ca",4
-"Morocco","ca",2
-"Netherlands","ca",1
-"Norway","ca",1
-"Portugal","ca",18
-"Romania","ca",1
-"Russia","ca",1
-"Slovakia","ca",1
-"Spain","ca",1349
-"Spain:Ibiza","ca",1
-"Spain:Majorca","ca",20
-"Spain:Minorca","ca",1
+"France","ca",24
+"Germany","ca",4
+"Hungary","ca",2
+"Ireland","ca",4
+"Italy","ca",5
+"Italy:Sicily","ca",1
+"Malta","ca",1
+"Netherlands","ca",5
+"Poland","ca",1
+"Portugal","ca",6
+"Spain","ca",780
+"Spain:Ibiza","ca",6
+"Spain:Majorca","ca",12
 "Sweden","ca",1
+"Switzerland","ca",3
+"Tunisia","ca",1
 "Turkey","ca",4
-"Turkey:North","ca",2
-"UK:Great Britain","ca",34
+"UK:Great Britain","ca",13
 "UK:Northern Ireland","ca",1
-"Finland","ckb",1
-"Iraq","ckb",6
-"Poland","ckb",6
-"Albania","cs",1
+"Iraq","ckb",18
 "Austria","cs",1
-"Bosnia and Herzegovina","cs",2
-"Bulgaria","cs",2
-"Czech Republic","cs",241
-"France","cs",12
-"France:Corsica","cs",1
-"Germany","cs",1
-"Ireland","cs",1
-"Italy","cs",5
+"Bosnia and Herzegovina","cs",3
+"Czech Republic","cs",176
+"Estonia","cs",4
+"Finland","cs",1
+"France","cs",2
+"Germany","cs",6
+"Italy","cs",4
 "Italy:Sicily","cs",1
-"Kosovo","cs",7
-"Macedonia","cs",2
-"Montenegro","cs",5
-"Netherlands","cs",1
-"Portugal","cs",2
-"Russia","cs",6
-"Serbia","cs",11
-"Slovakia","cs",5
-"Slovenia","cs",3
-"Spain","cs",19
-"Switzerland","cs",2
-"Turkey","cs",7
+"Montenegro","cs",1
+"Poland","cs",2
+"Romania","cs",1
+"Russia","cs",2
+"Serbia","cs",6
+"Slovenia","cs",1
+"Spain","cs",9
+"Sweden","cs",2
+"Turkey","cs",6
 "UK:Great Britain","cs",14
-"Ukraine","cs",2
-"Andorra","cy",1
-"Czech Republic","cy",2
-"Denmark:Sjaelland","cy",1
-"France","cy",18
-"Germany","cy",2
-"Greenland","cy",1
-"Iceland","cy",1
-"Ireland","cy",3
-"Italy","cy",4
-"Luxembourg","cy",1
+"UK:Northern Ireland","cs",1
+"Ukraine","cs",1
+"Germany","cy",4
+"Greece","cy",1
+"Iraq","cy",1
+"Ireland","cy",1
+"Italy","cy",3
+"Malta","cy",1
 "Netherlands","cy",1
-"Norway","cy",1
-"Poland","cy",1
 "Portugal","cy",1
-"Slovenia","cy",1
-"Spain","cy",22
-"Sweden","cy",1
-"Turkey","cy",5
-"UK:Great Britain","cy",137
-"UK:Northern Ireland","cy",1
-"Albania","da",1
-"Algeria","da",1
-"Belgium","da",3
-"Denmark","da",51
-"Denmark:Fyn","da",11
-"Denmark:Lolland","da",1
-"Denmark:Sjaelland","da",82
+"Spain","cy",7
+"Turkey","cy",8
+"UK:Great Britain","cy",50
+"Belgium","da",5
+"Bosnia and Herzegovina","da",1
+"Bulgaria","da",1
+"Denmark","da",17
+"Denmark:Bornholm","da",1
+"Denmark:Fyn","da",4
+"Denmark:Sjaelland","da",78
+"Estonia","da",2
 "Finland","da",1
-"France","da",14
-"Germany","da",6
-"Greece","da",1
-"Greece:Mikonos","da",2
-"Ireland","da",1
-"Italy","da",4
-"Kosovo","da",5
-"Lebanon","da",1
-"Montenegro","da",1
-"Netherlands","da",12
-"Norway","da",32
-"Poland","da",1
-"Portugal","da",5
-"Russia","da",5
-"Spain","da",11
-"Sweden","da",11
-"Switzerland","da",1
-"Turkey","da",7
-"UK:Great Britain","da",21
-"Ukraine","da",2
-"Austria","de",219
-"Belgium","de",7
+"France","da",8
+"Germany","da",11
+"Italy","da",1
+"Netherlands","da",1
+"Norway","da",13
+"Poland","da",2
+"Russia","da",2
+"Serbia","da",1
+"Spain","da",2
+"Sweden","da",1
+"Switzerland","da",2
+"Turkey","da",9
+"Turkey:North","da",2
+"UK:Great Britain","da",9
+"UK:Northern Ireland","da",1
+"Ukraine","da",1
+"Albania","de",1
+"Austria","de",193
+"Belgium","de",14
+"Bosnia and Herzegovina","de",4
 "Bulgaria","de",1
-"Czech Republic","de",3
-"Denmark:Sjaelland","de",1
-"Finland","de",2
-"France","de",43
-"Germany","de",2421
-"Germany:Rugen","de",1
-"Germany:Usedom","de",29
-"Greece","de",4
-"Hungary","de",4
-"Ireland","de",8
-"Italy","de",20
-"Italy:Sicily","de",2
-"Kosovo","de",2
-"Lebanon","de",1
-"Liechtenstein","de",2
-"Luxembourg","de",2
-"Malta","de",2
-"Netherlands","de",33
-"Norway","de",3
-"Poland","de",4
-"Portugal","de",22
-"Russia","de",2
-"Spain","de",14
-"Spain:Majorca","de",3
-"Sweden","de",3
-"Switzerland","de",159
-"Turkey","de",23
-"Turkey:North","de",2
-"UK:Great Britain","de",76
-"UK:Northern Ireland","de",3
-"Ukraine","de",1
-"Austria","el",1
-"Cyprus:Northern Cyprus","el",40
-"France","el",2
-"Germany","el",6
-"Greece","el",283
-"Greece:Crete","el",9
-"Greece:Evvoia","el",4
-"Greece:Kefallinia","el",1
-"Greece:Kerkira","el",9
-"Greece:Khios","el",5
-"Greece:Rodhos","el",1
-"Greece:Thira","el",1
-"Italy","el",1
-"Malta","el",4
-"Norway","el",19
-"Spain","el",1
-"Sweden","el",17
-"UK:Great Britain","el",22
-"Albania","en",16
-"Algeria","en",37
-"Andorra","en",3
-"Austria","en",170
-"Azerbaijan","en",1
-"Belarus","en",21
-"Belgium","en",548
-"Bosnia and Herzegovina","en",52
-"Bulgaria","en",67
-"Croatia","en",7
-"Cyprus","en",2
-"Cyprus:Northern Cyprus","en",123
-"Czech Republic","en",108
-"Denmark","en",47
-"Denmark:8","en",5
-"Denmark:Fyn","en",17
-"Denmark:Sjaelland","en",118
+"Czech Republic","de",1
+"France","de",22
+"Germany","de",1980
+"Greece","de",5
+"Iran","de",1
+"Iraq","de",2
+"Ireland","de",1
+"Italy","de",12
+"Moldova","de",1
+"Netherlands","de",25
+"Poland","de",6
+"Portugal","de",5
+"Russia","de",3
+"Serbia","de",2
+"Spain","de",8
+"Sweden","de",5
+"Switzerland","de",106
+"Turkey","de",16
+"UK:Great Britain","de",32
+"Ukraine","de",5
+"Belgium","el",4
+"Bosnia and Herzegovina","el",1
+"Finland","el",1
+"France","el",1
+"Germany","el",2
+"Greece","el",204
+"Greece:Evvoia","el",2
+"Greece:Kerkira","el",7
+"Netherlands","el",1
+"Poland","el",1
+"UK:Great Britain","el",2
+"Afghanistan","en",26
+"Albania","en",15
+"Algeria","en",5
+"Andorra","en",2
+"Armenia","en",24
+"Austria","en",159
+"Azerbaijan","en",7
+"Belarus","en",12
+"Belgium","en",333
+"Bosnia and Herzegovina","en",59
+"Bulgaria","en",62
+"Croatia","en",5
+"Czech Republic","en",61
+"Denmark","en",19
+"Denmark:8","en",4
+"Denmark:Bornholm","en",1
+"Denmark:Fyn","en",10
+"Denmark:Sjaelland","en",70
 "Estonia","en",15
-"Faroe Islands:Eysturoy","en",2
-"Finland","en",135
-"France","en",1951
-"France:Corsica","en",6
-"Georgia","en",45
-"Germany","en",1527
-"Germany:Usedom","en",1
-"Greece","en",58
-"Greece:Crete","en",4
-"Greece:Kerkira","en",4
-"Greece:Mikonos","en",2
-"Greece:Samos","en",1
-"Greenland","en",1
-"Guernsey","en",17
-"Hungary","en",150
-"Iceland","en",73
-"Iraq","en",57
-"Ireland","en",3608
-"Isle of Man","en",53
-"Italy","en",1101
-"Italy:Isola d'Elba","en",1
-"Italy:Sardinia","en",12
-"Italy:Sicily","en",46
-"Jersey","en",41
-"Kosovo","en",56
-"Latvia","en",48
-"Lebanon","en",138
-"Liechtenstein","en",1
-"Lithuania","en",9
-"Luxembourg","en",52
-"Macedonia","en",18
-"Malta","en",57
-"Moldova","en",5
-"Monaco","en",2
-"Montenegro","en",15
-"Morocco","en",27
-"Netherlands","en",1243
-"Norway","en",220
-"Norway:Senja","en",4
-"Poland","en",319
-"Portugal","en",782
-"Romania","en",96
-"Russia","en",186
-"Serbia","en",75
-"Slovakia","en",33
-"Slovenia","en",34
-"Spain","en",1641
-"Spain:Ibiza","en",7
-"Spain:Majorca","en",25
-"Spain:Minorca","en",2
-"Sweden","en",330
-"Sweden:Gotland","en",3
-"Switzerland","en",555
-"Syria","en",7
-"Tunisia","en",32
-"Turkey","en",254
-"Turkey:North","en",45
-"UK:Great Britain","en",47114
-"UK:Isle of Wight","en",33
-"UK:Northern Ireland","en",1150
+"Faroe Islands:Sandoy","en",1
+"Finland","en",134
+"France","en",973
+"France:Corsica","en",4
+"Georgia","en",29
+"Germany","en",1007
+"Germany:6","en",1
+"Greece","en",76
+"Greece:Kefallinia","en",1
+"Greece:Khios","en",3
+"Greece:Levkas","en",3
+"Greece:Rodhos","en",6
+"Greece:Thira","en",2
+"Greece:Zakinthos","en",2
+"Guernsey","en",19
+"Hungary","en",100
+"Iceland","en",34
+"Iran","en",14
+"Iraq","en",34
+"Ireland","en",1639
+"Isle of Man","en",37
+"Italy","en",552
+"Italy:Sardinia","en",6
+"Italy:Sicily","en",17
+"Jersey","en",8
+"Kazakhstan","en",15
+"Kosovo","en",16
+"Latvia","en",30
+"Liechtenstein","en",3
+"Lithuania","en",13
+"Luxembourg","en",17
+"Macedonia","en",8
+"Malta","en",44
+"Moldova","en",1
+"Monaco","en",1
+"Montenegro","en",7
+"Netherlands","en",601
+"Netherlands:South","en",7
+"Netherlands:Texel","en",1
+"Norway","en",119
+"Norway:Hinnoya","en",1
+"Norway:Svalbard:Edgeoya","en",2
+"Pakistan","en",7
+"Poland","en",183
+"Portugal","en",194
+"Romania","en",66
+"Russia","en",147
+"Russia:32","en",4
+"Serbia","en",41
+"Slovakia","en",26
+"Slovenia","en",22
+"Spain","en",895
+"Spain:Ibiza","en",9
+"Spain:Majorca","en",6
+"Spain:Minorca","en",1
+"Sweden","en",134
+"Switzerland","en",208
+"Syria","en",9
+"Tunisia","en",16
+"Turkey","en",181
+"Turkey:North","en",21
+"UK:Great Britain","en",23568
+"UK:Isle of Wight","en",23
+"UK:Northern Ireland","en",527
 "UK:Scotland:Island of Arran","en",1
-"UK:Scotland:Island of Skye","en",3
-"UK:Scotland:Islay","en",53
-"UK:Scotland:Isle of Lewis","en",7
-"UK:Scotland:Isle of Mull","en",1
-"UK:Scotland:North Uist","en",1
-"UK:Scotland:Orkney Islands:Mainland","en",4
-"UK:Scotland:Shetland Islands:Mainland","en",13
-"UK:Wales:Anglesey","en",28
-"Ukraine","en",124
-"Algeria","es",6
-"Andorra","es",15
-"Austria","es",41
-"Belarus","es",1
-"Belgium","es",58
-"Bosnia and Herzegovina","es",3
-"Bulgaria","es",4
-"Cyprus:Northern Cyprus","es",1
-"Czech Republic","es",15
-"Denmark","es",10
-"Denmark:Sjaelland","es",12
-"Finland","es",7
-"France","es",458
-"France:Corsica","es",3
-"Germany","es",265
-"Greece","es",6
+"UK:Scotland:Island of Skye","en",7
+"UK:Scotland:Isle of Mull","en",2
+"UK:Scotland:Orkney Islands:Mainland","en",1
+"UK:Scotland:Orkney Islands:Westray","en",1
+"UK:Scotland:Shetland Islands:Mainland","en",3
+"UK:Scotland:South Uist","en",1
+"UK:Wales:Anglesey","en",8
+"Ukraine","en",52
+"Uzbekistan","en",7
+"Algeria","es",2
+"Andorra","es",10
+"Austria","es",20
+"Azerbaijan","es",1
+"Belgium","es",27
+"Bosnia and Herzegovina","es",2
+"Czech Republic","es",11
+"Denmark","es",2
+"Denmark:Sjaelland","es",3
+"Estonia","es",4
+"Finland","es",4
+"France","es",164
+"Georgia","es",3
+"Germany","es",128
+"Greece","es",1
 "Greece:Mikonos","es",1
-"Greece:Thira","es",1
-"Hungary","es",18
+"Hungary","es",17
 "Iceland","es",5
 "Iraq","es",1
-"Ireland","es",66
-"Italy","es",383
-"Italy:Sardinia","es",8
-"Italy:Sicily","es",19
-"Latvia","es",3
-"Lebanon","es",7
-"Lithuania","es",5
+"Ireland","es",36
+"Italy","es",181
+"Italy:Sardinia","es",4
+"Italy:Sicily","es",5
+"Kosovo","es",1
 "Luxembourg","es",1
-"Macedonia","es",3
-"Malta","es",9
-"Monaco","es",1
-"Morocco","es",132
-"Netherlands","es",53
+"Macedonia","es",2
+"Malta","es",10
+"Montenegro","es",1
+"Netherlands","es",45
 "Norway","es",9
-"Poland","es",49
-"Portugal","es",314
-"Romania","es",18
-"Russia","es",14
+"Poland","es",11
+"Portugal","es",80
+"Romania","es",15
+"Russia","es",13
 "Serbia","es",11
-"Slovakia","es",12
+"Slovakia","es",2
 "Slovenia","es",1
-"Spain","es",17645
-"Spain:Formentera","es",3
-"Spain:Ibiza","es",37
-"Spain:Majorca","es",162
-"Spain:Minorca","es",13
-"Sweden","es",14
-"Switzerland","es",53
-"Turkey","es",22
-"UK:Great Britain","es",455
-"UK:Isle of Wight","es",43
-"UK:Northern Ireland","es",10
-"UK:Wales:Anglesey","es",21
+"Spain","es",9274
+"Spain:Ibiza","es",17
+"Spain:Majorca","es",71
+"Spain:Minorca","es",8
+"Sweden","es",11
+"Switzerland","es",48
+"Syria","es",1
+"Turkey","es",12
+"UK:Great Britain","es",222
+"UK:Isle of Wight","es",2
+"UK:Northern Ireland","es",2
 "Ukraine","es",5
-"Albania","et",6
-"Algeria","et",2
-"Austria","et",4
-"Belgium","et",4
-"Cyprus:Northern Cyprus","et",1
-"Denmark:Sjaelland","et",2
-"Estonia","et",16
-"Finland","et",8
-"France","et",32
+"Albania","et",3
+"Austria","et",1
+"Belgium","et",3
+"Bosnia and Herzegovina","et",1
+"Bulgaria","et",2
+"Estonia","et",5
+"Finland","et",10
+"France","et",9
 "Germany","et",9
-"Hungary","et",1
-"Italy","et",17
-"Italy:Sicily","et",1
-"Kosovo","et",24
-"Lebanon","et",3
-"Macedonia","et",4
-"Montenegro","et",5
-"Morocco","et",1
-"Netherlands","et",4
-"Poland","et",1
-"Portugal","et",11
-"Russia","et",2
-"Russia:32","et",1
-"Serbia","et",2
-"Slovenia","et",3
-"Spain","et",29
-"Sweden","et",5
-"Switzerland","et",3
-"Turkey","et",22
-"Turkey:North","et",4
-"UK:Great Britain","et",39
-"Ukraine","et",2
-"Andorra","eu",1
+"Greece","et",1
+"Iran","et",1
+"Ireland","et",1
+"Italy","et",8
+"Kosovo","et",4
+"Macedonia","et",2
+"Netherlands","et",3
+"Portugal","et",1
+"Romania","et",1
+"Serbia","et",6
+"Spain","et",16
+"Sweden","et",1
+"Switzerland","et",1
+"Turkey","et",17
+"UK:Great Britain","et",20
+"UK:Wales:Anglesey","et",1
 "Austria","eu",1
-"Belgium","eu",2
+"Belgium","eu",1
 "Finland","eu",1
-"France","eu",15
-"Germany","eu",8
-"Hungary","eu",1
-"Italy","eu",2
-"Netherlands","eu",5
-"Poland","eu",1
-"Portugal","eu",11
-"Russia","eu",1
-"Spain","eu",59
-"Spain:Ibiza","eu",2
-"Turkey","eu",13
-"Turkey:North","eu",3
-"UK:Great Britain","eu",17
-"Austria","fa",5
-"Czech Republic","fa",1
-"Denmark:Sjaelland","fa",22
-"France","fa",3
-"Georgia","fa",3
-"Germany","fa",51
-"Iraq","fa",19
-"Italy","fa",4
-"Liechtenstein","fa",6
-"Netherlands","fa",13
-"Poland","fa",1
+"France","eu",6
+"Georgia","eu",1
+"Germany","eu",2
+"Italy","eu",3
+"Italy:Sicily","eu",1
+"Kosovo","eu",1
+"Netherlands","eu",2
+"Portugal","eu",3
+"Spain","eu",56
+"Turkey","eu",9
+"UK:Great Britain","eu",7
+"Afghanistan","fa",10
+"Armenia","fa",1
+"Austria","fa",3
+"Belgium","fa",1
+"France","fa",2
+"Germany","fa",22
+"Hungary","fa",2
+"Iran","fa",48
+"Iraq","fa",12
+"Italy","fa",3
+"Netherlands","fa",2
+"Norway","fa",2
+"Russia","fa",1
 "Spain","fa",1
-"Sweden","fa",2
-"Turkey","fa",2
-"Turkey:North","fa",1
-"UK:Great Britain","fa",19
-"Ukraine","fa",2
-"Austria","fi",2
-"Bulgaria","fi",5
-"Cyprus","fi",1
-"Denmark:Sjaelland","fi",2
+"Sweden","fa",4
+"Switzerland","fa",1
+"Turkey","fa",4
+"UK:Great Britain","fa",12
+"Azerbaijan","fi",3
+"Belgium","fi",3
+"Czech Republic","fi",4
 "Estonia","fi",1
-"Finland","fi",313
-"France","fi",9
-"Germany","fi",8
-"Greece","fi",6
-"Greece:Crete","fi",1
-"Iceland","fi",1
-"Ireland","fi",52
-"Italy","fi",9
-"Kosovo","fi",5
-"Macedonia","fi",3
-"Malta","fi",2
-"Moldova","fi",4
-"Netherlands","fi",10
-"Norway","fi",19
-"Poland","fi",6
-"Portugal","fi",2
-"Romania","fi",3
-"Russia","fi",120
-"Slovenia","fi",1
+"Finland","fi",324
+"Finland:Vallgrund","fi",1
+"France","fi",7
+"Georgia","fi",1
+"Germany","fi",13
+"Greece","fi",2
+"Ireland","fi",2
+"Italy","fi",4
+"Kazakhstan","fi",1
+"Latvia","fi",1
+"Macedonia","fi",1
+"Netherlands","fi",12
+"Romania","fi",1
+"Russia","fi",40
 "Spain","fi",16
-"Sweden","fi",25
-"Turkey","fi",5
+"Sweden","fi",1
+"Switzerland","fi",2
+"Turkey","fi",2
 "Turkey:North","fi",1
-"UK:Great Britain","fi",36
-"Ukraine","fi",44
-"Algeria","fr",39
-"Andorra","fr",1
-"Austria","fr",13
-"Belarus","fr",2
-"Belgium","fr",391
-"Czech Republic","fr",9
-"Denmark","fr",2
-"Denmark:Sjaelland","fr",1
-"Estonia","fr",2
-"Finland","fr",5
-"France","fr",12225
-"France:Corsica","fr",132
-"France:Ile d'Oleron","fr",1
-"Germany","fr",70
-"Greece","fr",2
-"Guernsey","fr",1
-"Iceland","fr",8
-"Ireland","fr",34
-"Italy","fr",109
+"UK:Great Britain","fi",12
+"Albania","fr",2
+"Algeria","fr",21
+"Austria","fr",1
+"Belgium","fr",331
+"Bosnia and Herzegovina","fr",2
+"Czech Republic","fr",2
+"Denmark","fr",1
+"Finland","fr",4
+"France","fr",6036
+"France:Corsica","fr",29
+"Germany","fr",75
+"Greece","fr",1
+"Hungary","fr",3
+"Iceland","fr",1
+"Ireland","fr",11
+"Italy","fr",35
+"Italy:Sardinia","fr",1
 "Italy:Sicily","fr",1
-"Kosovo","fr",2
 "Latvia","fr",1
-"Lebanon","fr",11
-"Lithuania","fr",1
-"Luxembourg","fr",9
-"Macedonia","fr",2
-"Malta","fr",1
-"Monaco","fr",13
-"Morocco","fr",31
-"Netherlands","fr",32
-"Norway","fr",30
-"Poland","fr",13
-"Portugal","fr",54
-"Romania","fr",6
-"Russia","fr",6
-"Serbia","fr",1
+"Luxembourg","fr",13
+"Malta","fr",7
+"Monaco","fr",2
+"Netherlands","fr",11
+"Poland","fr",2
+"Portugal","fr",16
+"Romania","fr",2
+"Russia","fr",15
+"Serbia","fr",2
+"Slovakia","fr",1
 "Slovenia","fr",1
-"Spain","fr",135
-"Spain:Ibiza","fr",1
-"Spain:Majorca","fr",3
-"Sweden","fr",1
-"Switzerland","fr",111
-"Tunisia","fr",30
-"Turkey","fr",5
+"Spain","fr",80
+"Spain:Ibiza","fr",2
+"Sweden","fr",4
+"Switzerland","fr",100
+"Tunisia","fr",23
+"Turkey","fr",8
 "Turkey:North","fr",1
-"UK:Great Britain","fr",389
-"UK:Northern Ireland","fr",2
-"Ukraine","fr",3
-"UK:Great Britain","gu",1
-"Belgium","hi",2
-"Czech Republic","hi",1
-"Denmark:Sjaelland","hi",3
-"France","hi",4
-"Germany","hi",2
-"Hungary","hi",1
-"Ireland","hi",3
-"Italy","hi",3
-"Kosovo","hi",2
-"Lebanon","hi",1
-"Macedonia","hi",1
-"Netherlands","hi",4
-"Poland","hi",1
-"Portugal","hi",2
-"Russia","hi",1
-"Spain","hi",9
+"UK:Great Britain","fr",137
+"UK:Northern Ireland","fr",1
+"Ukraine","fr",1
+"Azerbaijan","hi",2
+"Belgium","hi",1
+"France","hi",3
+"Germany","hi",6
+"Iraq","hi",1
+"Ireland","hi",2
+"Kosovo","hi",1
+"Pakistan","hi",4
+"Serbia","hi",1
+"Spain","hi",4
 "Switzerland","hi",1
 "Turkey","hi",2
-"Turkey:North","hi",1
-"UK:Great Britain","hi",27
-"Ukraine","hi",1
-"Algeria","ht",3
-"Austria","ht",2
-"Belgium","ht",7
+"UK:Great Britain","hi",10
+"Austria","ht",1
+"Belgium","ht",3
 "Bosnia and Herzegovina","ht",1
-"Cyprus:Northern Cyprus","ht",1
-"Finland","ht",1
-"France","ht",112
-"Georgia","ht",1
+"France","ht",38
 "Germany","ht",13
-"Iceland","ht",1
-"Iraq","ht",2
-"Ireland","ht",4
-"Italy","ht",20
-"Kosovo","ht",9
-"Lebanon","ht",9
-"Macedonia","ht",2
-"Montenegro","ht",1
-"Morocco","ht",1
-"Netherlands","ht",7
-"Norway","ht",5
-"Poland","ht",3
-"Portugal","ht",14
-"Russia","ht",5
-"Serbia","ht",3
-"Slovakia","ht",1
-"Spain","ht",42
-"Spain:Minorca","ht",1
+"Greece:Kos","ht",1
+"Hungary","ht",1
+"Ireland","ht",5
+"Italy","ht",6
+"Italy:Sardinia","ht",1
+"Kosovo","ht",2
+"Luxembourg","ht",1
+"Netherlands","ht",1
+"Portugal","ht",4
+"Serbia","ht",2
+"Spain","ht",29
 "Sweden","ht",1
-"Switzerland","ht",2
-"Turkey","ht",17
-"Turkey:North","ht",3
-"UK:Great Britain","ht",70
-"Ukraine","ht",1
-"Austria","hu",3
-"Belgium","hu",1
-"Cyprus:Northern Cyprus","hu",1
-"Czech Republic","hu",1
-"Denmark","hu",1
-"France","hu",12
+"Switzerland","ht",1
+"Turkey","ht",10
+"Turkey:North","ht",1
+"UK:Great Britain","ht",16
+"Andorra","hu",1
+"Austria","hu",1
+"Finland","hu",1
 "Germany","hu",3
-"Hungary","hu",75
-"Ireland","hu",2
-"Italy","hu",2
-"Kosovo","hu",3
-"Macedonia","hu",2
-"Morocco","hu",1
-"Netherlands","hu",1
-"Poland","hu",2
-"Portugal","hu",7
-"Serbia","hu",2
-"Spain","hu",34
-"Spain:Ibiza","hu",1
-"Switzerland","hu",1
-"Turkey","hu",11
-"Turkey:North","hu",1
-"UK:Great Britain","hu",12
-"UK:Wales:Anglesey","hu",1
-"Albania","in",1
-"Algeria","in",6
+"Hungary","hu",72
+"Iraq","hu",1
+"Italy","hu",1
+"Macedonia","hu",1
+"Norway","hu",1
+"Romania","hu",1
+"Slovenia","hu",1
+"Spain","hu",14
+"Turkey","hu",7
+"UK:Great Britain","hu",1
+"Armenia","hy",2
+"Afghanistan","in",1
+"Albania","in",3
+"Algeria","in",3
 "Austria","in",6
-"Belarus","in",2
-"Belgium","in",14
-"Bosnia and Herzegovina","in",6
-"Croatia","in",2
-"Cyprus:Northern Cyprus","in",2
-"Czech Republic","in",2
-"Denmark","in",1
-"Finland","in",5
-"France","in",135
-"France:Ile d'Oleron","in",1
-"Georgia","in",2
-"Germany","in",49
-"Hungary","in",5
-"Iraq","in",8
-"Ireland","in",14
-"Italy","in",58
-"Italy:Sardinia","in",3
-"Italy:Sicily","in",5
-"Kosovo","in",26
-"Latvia","in",1
-"Lebanon","in",12
-"Lithuania","in",1
+"Azerbaijan","in",2
+"Belgium","in",6
+"Bosnia and Herzegovina","in",3
+"Bulgaria","in",1
+"Czech Republic","in",3
+"Denmark:Sjaelland","in",2
+"Finland","in",4
+"France","in",52
+"Germany","in",48
+"Greece","in",1
+"Hungary","in",8
+"Iceland","in",2
+"Iran","in",2
+"Iraq","in",5
+"Ireland","in",7
+"Italy","in",23
+"Italy:Sicily","in",1
+"Jersey","in",1
+"Kosovo","in",3
+"Luxembourg","in",1
 "Macedonia","in",4
-"Montenegro","in",2
-"Morocco","in",1
-"Netherlands","in",26
-"Norway","in",1
-"Poland","in",13
-"Portugal","in",41
-"Romania","in",3
-"Russia","in",11
-"Serbia","in",7
-"Slovakia","in",1
-"Slovenia","in",3
-"Spain","in",127
-"Sweden","in",13
-"Switzerland","in",21
-"Turkey","in",72
-"Turkey:North","in",5
-"UK:Great Britain","in",180
-"UK:Northern Ireland","in",2
-"Ukraine","in",4
-"Belgium","is",1
-"Denmark:Sjaelland","is",1
-"France","is",10
-"Germany","is",5
-"Iceland","is",45
+"Netherlands","in",19
+"Norway","in",2
+"Pakistan","in",1
+"Poland","in",3
+"Portugal","in",11
+"Romania","in",2
+"Russia","in",10
+"Serbia","in",3
+"Spain","in",52
+"Sweden","in",5
+"Switzerland","in",8
+"Tunisia","in",3
+"Turkey","in",50
+"Turkey:North","in",10
+"UK:Great Britain","in",104
+"Ukraine","in",6
+"Uzbekistan","in",1
+"Bosnia and Herzegovina","is",1
+"France","is",1
+"Georgia","is",1
+"Germany","is",2
+"Hungary","is",1
+"Iceland","is",18
 "Ireland","is",1
-"Italy","is",3
-"Montenegro","is",1
-"Netherlands","is",6
-"Norway","is",2
-"Portugal","is",3
-"Serbia","is",3
-"Spain","is",15
-"Sweden","is",1
-"Switzerland","is",1
+"Netherlands","is",1
+"Norway","is",1
+"Portugal","is",1
+"Russia","is",1
+"Serbia","is",4
+"Spain","is",4
 "Turkey","is",4
-"UK:Great Britain","is",5
-"Albania","it",6
-"Andorra","it",3
-"Austria","it",17
-"Belgium","it",28
-"Bosnia and Herzegovina","it",6
-"Bulgaria","it",2
-"Cyprus:Northern Cyprus","it",1
+"Turkey:North","is",1
+"UK:Great Britain","is",3
+"Albania","it",1
+"Azerbaijan","it",1
+"Belgium","it",11
+"Bosnia and Herzegovina","it",2
 "Czech Republic","it",3
-"Denmark","it",1
-"France","it",110
-"France:Corsica","it",7
-"Germany","it",59
-"Hungary","it",10
+"Denmark:Sjaelland","it",1
+"Finland","it",1
+"France","it",44
+"France:Corsica","it",2
+"Germany","it",19
+"Greece","it",5
 "Iraq","it",1
 "Ireland","it",8
-"Italy","it",6373
-"Italy:Forio","it",1
-"Italy:Isola d'Elba","it",13
-"Italy:Sardinia","it",126
-"Italy:Sicily","it",279
-"Kosovo","it",4
-"Lebanon","it",8
-"Luxembourg","it",3
-"Macedonia","it",2
-"Malta","it",12
+"Italy","it",3214
+"Italy:Forio","it",5
+"Italy:Isola di Pantelleria","it",1
+"Italy:Sardinia","it",64
+"Italy:Sicily","it",176
+"Malta","it",7
 "Montenegro","it",1
-"Netherlands","it",16
-"Norway","it",4
-"Poland","it",7
-"Portugal","it",77
-"Romania","it",14
+"Netherlands","it",6
+"Norway","it",2
+"Poland","it",3
+"Portugal","it",9
+"Romania","it",3
 "Russia","it",3
 "Serbia","it",2
-"Slovenia","it",2
-"Spain","it",173
-"Spain:Majorca","it",2
-"Sweden","it",3
-"Switzerland","it",120
-"Tunisia","it",3
+"Slovenia","it",1
+"Spain","it",58
+"Sweden","it",1
+"Switzerland","it",24
 "Turkey","it",16
-"Turkey:North","it",1
-"UK:Great Britain","it",158
-"UK:Northern Ireland","it",1
-"Ukraine","it",2
-"Czech Republic","iw",6
-"France","iw",12
-"Germany","iw",3
-"Italy","iw",1
+"Turkey:North","it",2
+"UK:Great Britain","it",60
+"Germany","iw",2
+"Hungary","iw",1
 "Russia","iw",2
-"Spain","iw",11
+"Spain","iw",2
 "Syria","iw",3
-"UK:Great Britain","iw",4
-"Albania","ja",1
-"Belgium","ja",3
-"Czech Republic","ja",3
-"Denmark:Sjaelland","ja",2
-"Estonia","ja",16
-"France","ja",22
-"Georgia","ja",2
-"Germany","ja",55
-"Greece","ja",1
-"Greenland","ja",2
-"Ireland","ja",5
-"Italy","ja",13
-"Malta","ja",1
-"Netherlands","ja",8
+"UK:Great Britain","iw",7
+"Austria","ja",6
+"Belgium","ja",6
+"Bosnia and Herzegovina","ja",1
+"Czech Republic","ja",4
+"Denmark","ja",4
+"Finland","ja",4
+"France","ja",21
+"Georgia","ja",4
+"Germany","ja",47
+"Greece","ja",4
+"Hungary","ja",1
+"Iraq","ja",1
+"Ireland","ja",10
+"Italy","ja",12
+"Latvia","ja",1
+"Moldova","ja",1
+"Netherlands","ja",6
+"Norway","ja",1
 "Poland","ja",3
-"Portugal","ja",1
-"Russia","ja",1
-"Spain","ja",32
-"Sweden","ja",1
-"Switzerland","ja",14
-"Turkey","ja",2
-"UK:Great Britain","ja",68
-"Austria","ko",1
-"Belarus","ko",1
-"Belgium","ko",2
-"France","ko",4
-"Germany","ko",1
-"Morocco","ko",1
+"Portugal","ja",4
+"Romania","ja",1
+"Russia","ja",2
+"Spain","ja",23
+"Switzerland","ja",6
+"Turkey","ja",1
+"UK:Great Britain","ja",44
+"Ukraine","ja",1
+"Uzbekistan","ja",5
+"France","ko",2
+"Georgia","ko",1
+"Germany","ko",9
+"Greece","ko",1
+"Iraq","ko",1
+"Italy","ko",4
+"Netherlands","ko",2
 "Portugal","ko",1
-"Russia","ko",2
+"Russia","ko",1
 "Spain","ko",1
-"Turkey","ko",1
-"UK:Great Britain","ko",3
-"Ukraine","ko",1
-"Albania","lt",1
-"Belgium","lt",2
-"Finland","lt",1
-"France","lt",12
-"France:Corsica","lt",1
-"Germany","lt",6
-"Italy","lt",6
-"Italy:Sardinia","lt",1
-"Latvia","lt",2
-"Lithuania","lt",7
+"Switzerland","ko",9
+"Tunisia","ko",1
+"UK:Great Britain","ko",1
+"Austria","lt",1
+"Belgium","lt",1
+"Czech Republic","lt",1
+"France","lt",4
+"Germany","lt",4
+"Latvia","lt",1
+"Lithuania","lt",4
+"Netherlands","lt",1
 "Poland","lt",1
-"Portugal","lt",9
-"Russia","lt",3
-"Slovenia","lt",1
-"Spain","lt",18
-"Sweden","lt",1
-"Switzerland","lt",1
-"Turkey","lt",5
-"UK:Great Britain","lt",15
-"UK:Northern Ireland","lt",1
-"Belgium","lv",2
+"Portugal","lt",1
+"Russia:32","lt",1
+"Serbia","lt",3
+"Spain","lt",5
+"Spain:Ibiza","lt",1
+"Turkey","lt",6
+"UK:Great Britain","lt",8
+"Belarus","lv",1
+"Belgium","lv",1
 "Bosnia and Herzegovina","lv",1
-"France","lv",8
-"France:Corsica","lv",1
-"Germany","lv",4
-"Ireland","lv",1
-"Italy","lv",3
-"Kosovo","lv",2
-"Latvia","lv",92
-"Montenegro","lv",2
-"Portugal","lv",6
-"Serbia","lv",2
-"Spain","lv",8
-"Switzerland","lv",1
-"Turkey","lv",22
-"UK:Great Britain","lv",19
-"Algeria","ne",1
-"Switzerland","ne",2
+"Denmark","lv",1
+"Finland","lv",1
+"France","lv",2
+"Germany","lv",3
+"Latvia","lv",56
+"Malta","lv",1
+"Montenegro","lv",1
+"Netherlands","lv",1
+"Portugal","lv",4
+"Serbia","lv",4
+"Slovenia","lv",1
+"Turkey","lv",10
+"UK:Great Britain","lv",4
+"Belgium","ne",2
+"Netherlands","ne",1
 "UK:Great Britain","ne",2
-"Austria","nl",1
-"Belgium","nl",565
+"Afghanistan","nl",1
+"Albania","nl",1
+"Austria","nl",5
+"Belgium","nl",358
 "Bosnia and Herzegovina","nl",1
-"Cyprus:Northern Cyprus","nl",1
-"Czech Republic","nl",2
-"Denmark","nl",1
-"Denmark:Fyn","nl",1
-"Denmark:Sjaelland","nl",3
-"Finland","nl",1
-"France","nl",36
-"Germany","nl",53
-"Greece","nl",3
-"Ireland","nl",4
-"Italy","nl",8
-"Kosovo","nl",5
-"Latvia","nl",2
-"Lebanon","nl",1
-"Luxembourg","nl",3
-"Macedonia","nl",1
-"Netherlands","nl",2536
-"Netherlands:South","nl",6
+"Denmark","nl",2
+"France","nl",15
+"Germany","nl",49
+"Greece","nl",4
+"Ireland","nl",5
+"Italy","nl",5
+"Luxembourg","nl",1
+"Netherlands","nl",1693
+"Netherlands:Schouwen-Duiveland","nl",4
+"Netherlands:South","nl",2
 "Netherlands:Terschelling","nl",1
-"Netherlands:Texel","nl",8
+"Netherlands:Texel","nl",17
 "Netherlands:Vlieland","nl",2
-"Portugal","nl",2
+"Norway","nl",1
+"Poland","nl",1
+"Portugal","nl",6
 "Russia","nl",2
-"Serbia","nl",1
-"Slovakia","nl",1
-"Slovenia","nl",1
-"Spain","nl",41
+"Spain","nl",9
+"Spain:Ibiza","nl",1
 "Sweden","nl",2
-"Switzerland","nl",8
-"Tunisia","nl",1
-"Turkey","nl",8
-"UK:Great Britain","nl",76
-"UK:Northern Ireland","nl",3
-"Ukraine","nl",1
+"Switzerland","nl",3
+"Turkey","nl",7
+"UK:Great Britain","nl",34
 "Albania","no",1
-"Belarus","no",1
-"Belgium","no",4
-"Cyprus:Northern Cyprus","no",1
-"Czech Republic","no",2
-"Denmark","no",1
-"Denmark:Fyn","no",2
-"Denmark:Sjaelland","no",7
-"France","no",9
-"Germany","no",12
-"Greece","no",1
-"Iceland","no",1
-"Ireland","no",1
-"Italy","no",5
-"Kosovo","no",2
-"Macedonia","no",1
-"Netherlands","no",6
-"Norway","no",220
-"Norway:1","no",3
-"Norway:Senja","no",1
-"Russia","no",1
-"Spain","no",8
-"Sweden","no",13
-"Turkey","no",11
-"Turkey:North","no",2
-"UK:Great Britain","no",19
-"UK:Northern Ireland","no",1
-"Ukraine","no",1
-"UK:Great Britain","pa",2
+"Czech Republic","no",1
+"Denmark","no",2
+"Denmark:Sjaelland","no",3
+"France","no",2
+"Germany","no",7
+"Italy","no",3
+"Kosovo","no",1
+"Netherlands","no",3
+"Norway","no",61
+"Poland","no",1
+"Serbia","no",1
+"Spain","no",2
+"Sweden","no",6
+"Switzerland","no",1
+"Turkey","no",5
+"UK:Great Britain","no",14
 "Algeria","pl",1
-"Austria","pl",3
-"Belgium","pl",11
-"Bosnia and Herzegovina","pl",3
-"Bulgaria","pl",1
-"Czech Republic","pl",10
-"Finland","pl",35
-"France","pl",15
-"France:Corsica","pl",1
-"Germany","pl",23
-"Hungary","pl",2
-"Ireland","pl",16
-"Italy","pl",12
-"Kosovo","pl",3
-"Lebanon","pl",2
-"Malta","pl",1
-"Montenegro","pl",6
-"Netherlands","pl",11
-"Norway","pl",4
-"Poland","pl",1844
-"Portugal","pl",2
-"Serbia","pl",10
-"Slovakia","pl",1
-"Spain","pl",23
-"Spain:Majorca","pl",1
-"Sweden","pl",13
-"Switzerland","pl",2
-"Turkey","pl",7
-"UK:Great Britain","pl",108
+"Austria","pl",5
+"Belarus","pl",3
+"Belgium","pl",2
+"Bosnia and Herzegovina","pl",7
+"Croatia","pl",2
+"Czech Republic","pl",7
+"Finland","pl",1
+"France","pl",4
+"Germany","pl",34
+"Hungary","pl",1
+"Iraq","pl",3
+"Ireland","pl",8
+"Italy","pl",5
+"Kosovo","pl",1
+"Lithuania","pl",1
+"Netherlands","pl",8
+"Norway:Vestvagoy","pl",5
+"Poland","pl",829
+"Serbia","pl",5
+"Slovenia","pl",2
+"Spain","pl",4
+"Switzerland","pl",3
+"Turkey","pl",2
+"UK:Great Britain","pl",47
+"UK:Northern Ireland","pl",1
+"Afghanistan","ps",4
 "Germany","ps",2
-"Andorra","pt",2
-"Austria","pt",26
-"Belarus","pt",2
-"Belgium","pt",20
-"Bosnia and Herzegovina","pt",3
-"Czech Republic","pt",10
-"Denmark:Sjaelland","pt",12
-"France","pt",185
-"Germany","pt",93
-"Greece:Crete","pt",7
-"Hungary","pt",7
-"Iraq","pt",2
-"Ireland","pt",92
-"Italy","pt",162
-"Italy:Sardinia","pt",2
-"Italy:Sicily","pt",2
-"Kosovo","pt",6
-"Lebanon","pt",1
-"Luxembourg","pt",1
-"Macedonia","pt",1
-"Morocco","pt",2
-"Netherlands","pt",24
-"Norway","pt",5
-"Poland","pt",5
-"Portugal","pt",5557
+"Algeria","pt",1
+"Andorra","pt",1
+"Belgium","pt",12
+"Bosnia and Herzegovina","pt",2
+"Bulgaria","pt",1
+"Czech Republic","pt",3
+"Denmark","pt",2
+"Estonia","pt",2
+"Finland","pt",9
+"France","pt",88
+"Germany","pt",70
+"Greece","pt",1
+"Greenland","pt",1
+"Hungary","pt",4
+"Ireland","pt",51
+"Italy","pt",50
+"Italy:Sicily","pt",5
+"Kazakhstan","pt",1
+"Luxembourg","pt",3
+"Netherlands","pt",33
+"Norway","pt",1
+"Poland","pt",7
+"Portugal","pt",1257
 "Romania","pt",1
-"Russia","pt",12
-"Serbia","pt",10
-"Slovakia","pt",2
-"Slovenia","pt",1
-"Spain","pt",360
+"Russia","pt",2
+"Serbia","pt",11
+"Spain","pt",181
 "Spain:Ibiza","pt",2
-"Spain:Majorca","pt",5
-"Sweden","pt",5
-"Sweden:Gotland","pt",1
-"Switzerland","pt",46
-"Turkey","pt",20
-"Turkey:North","pt",3
-"UK:Great Britain","pt",249
-"UK:Isle of Wight","pt",1
-"UK:Wales:Anglesey","pt",1
-"Ukraine","pt",10
-"Austria","ro",1
-"Cyprus:Northern Cyprus","ro",1
-"France","ro",13
-"Germany","ro",1
+"Spain:Majorca","pt",1
+"Sweden","pt",3
+"Switzerland","pt",23
+"Turkey","pt",3
+"Turkey:North","pt",1
+"UK:Great Britain","pt",154
+"Ukraine","pt",2
+"Croatia","ro",1
+"France","ro",7
+"Germany","ro",3
+"Greece","ro",1
 "Hungary","ro",1
-"Ireland","ro",4
-"Italy","ro",5
-"Lebanon","ro",1
-"Luxembourg","ro",1
-"Netherlands","ro",3
-"Portugal","ro",6
-"Romania","ro",25
+"Ireland","ro",1
+"Italy","ro",7
+"Moldova","ro",1
+"Netherlands","ro",2
+"Portugal","ro",2
+"Romania","ro",28
 "Russia","ro",1
-"Spain","ro",14
-"Switzerland","ro",1
-"Turkey","ro",8
+"Slovenia","ro",2
+"Spain","ro",6
+"Turkey","ro",13
 "Turkey:North","ro",1
-"UK:Great Britain","ro",19
-"Ukraine","ro",4
-"Austria","ru",8
-"Belarus","ru",293
+"UK:Great Britain","ro",8
+"UK:Northern Ireland","ro",1
+"Armenia","ru",1
+"Austria","ru",2
+"Azerbaijan","ru",1
+"Belarus","ru",223
 "Belgium","ru",4
-"Bulgaria","ru",5
-"Cyprus","ru",1
-"Cyprus:Northern Cyprus","ru",9
-"Czech Republic","ru",13
+"Bosnia and Herzegovina","ru",7
+"Bulgaria","ru",21
+"Czech Republic","ru",2
 "Denmark:Sjaelland","ru",2
-"Estonia","ru",7
-"Finland","ru",16
-"France","ru",13
-"Georgia","ru",3
-"Germany","ru",72
-"Greece","ru",1
-"Greece:Crete","ru",1
-"Hungary","ru",17
-"Iceland","ru",1
+"Estonia","ru",5
+"Finland","ru",4
+"France","ru",6
+"Georgia","ru",8
+"Germany","ru",81
+"Hungary","ru",5
+"Iceland","ru",3
 "Ireland","ru",2
-"Italy","ru",30
-"Latvia","ru",64
-"Lithuania","ru",10
-"Macedonia","ru",17
-"Malta","ru",2
-"Moldova","ru",12
-"Montenegro","ru",1
-"Netherlands","ru",11
-"Norway","ru",10
-"Poland","ru",32
+"Italy","ru",14
+"Kazakhstan","ru",97
+"Latvia","ru",27
+"Lithuania","ru",1
+"Luxembourg","ru",1
+"Macedonia","ru",4
+"Moldova","ru",2
+"Montenegro","ru",11
+"Netherlands","ru",3
+"Norway","ru",4
+"Poland","ru",14
 "Portugal","ru",7
 "Romania","ru",1
-"Russia","ru",2993
-"Russia:32","ru",31
-"Serbia","ru",4
-"Slovakia","ru",8
+"Russia","ru",2431
+"Russia:32","ru",28
+"Serbia","ru",24
+"Slovakia","ru",2
 "Slovenia","ru",1
-"Spain","ru",20
-"Sweden","ru",4
-"Switzerland","ru",5
-"Turkey","ru",3
-"Turkey:North","ru",1
-"UK:Great Britain","ru",33
-"Ukraine","ru",934
-"UK:Great Britain","si",2
-"Belgium","sl",3
-"Bosnia and Herzegovina","sl",7
-"Denmark:Sjaelland","sl",2
-"France","sl",4
-"Georgia","sl",1
-"Germany","sl",1
-"Greece","sl",1
-"Hungary","sl",8
-"Ireland","sl",1
-"Kosovo","sl",3
+"Spain","ru",36
+"Sweden","ru",12
+"Switzerland","ru",1
+"Turkey","ru",6
+"UK:Great Britain","ru",8
+"Ukraine","ru",381
+"Uzbekistan","ru",27
+"Belgium","sl",2
+"Bosnia and Herzegovina","sl",11
+"Finland","sl",1
+"Germany","sl",2
+"Hungary","sl",1
+"Italy","sl",1
 "Macedonia","sl",1
 "Malta","sl",1
-"Montenegro","sl",1
-"Portugal","sl",2
-"Russia","sl",1
-"Serbia","sl",19
-"Slovakia","sl",1
-"Slovenia","sl",55
+"Montenegro","sl",2
+"Netherlands","sl",2
+"Romania","sl",1
+"Serbia","sl",25
+"Slovenia","sl",50
+"Spain","sl",2
 "Switzerland","sl",2
-"Turkey","sl",2
-"Turkey:North","sl",1
-"UK:Great Britain","sl",3
-"Bosnia and Herzegovina","sr",2
-"Bulgaria","sr",2
-"Czech Republic","sr",2
-"Macedonia","sr",40
-"Poland","sr",1
+"Turkey","sl",5
+"UK:Great Britain","sl",2
+"Belarus","sr",1
+"Bosnia and Herzegovina","sr",10
+"France","sr",3
+"Germany","sr",37
+"Hungary","sr",2
+"Kazakhstan","sr",1
+"Macedonia","sr",18
+"Montenegro","sr",1
 "Russia","sr",4
 "Serbia","sr",61
-"Ukraine","sr",3
-"Austria","sv",1
-"Belgium","sv",2
-"Bosnia and Herzegovina","sv",1
-"Czech Republic","sv",2
-"Denmark:Sjaelland","sv",5
-"Finland","sv",4
-"France","sv",9
-"Germany","sv",9
-"Ireland","sv",7
-"Italy","sv",9
-"Kosovo","sv",2
-"Macedonia","sv",1
-"Montenegro","sv",1
+"UK:Great Britain","sr",1
+"Ukraine","sr",1
+"Uzbekistan","sr",2
+"Austria","sv",3
+"Bosnia and Herzegovina","sv",2
+"Bulgaria","sv",1
+"Croatia","sv",1
+"Denmark:8","sv",3
+"Denmark:Sjaelland","sv",1
+"Finland","sv",5
+"France","sv",8
+"Germany","sv",5
+"Ireland","sv",1
+"Italy","sv",1
+"Latvia","sv",1
 "Netherlands","sv",2
-"Norway","sv",8
-"Poland","sv",7
+"Norway","sv",3
+"Poland","sv",1
 "Portugal","sv",2
-"Russia","sv",1
 "Serbia","sv",1
-"Spain","sv",20
-"Sweden","sv",532
-"Sweden:Gotland","sv",8
-"Sweden:Varmdo","sv",7
-"Switzerland","sv",4
-"Turkey","sv",12
-"UK:Great Britain","sv",35
-"Germany","ta",3
-"Sweden","ta",1
-"UK:Great Britain","ta",5
-"Austria","th",1
-"Belgium","th",1
+"Slovakia","sv",1
+"Spain","sv",5
+"Sweden","sv",235
+"Sweden:Gotland","sv",4
+"Sweden:Varmdo","sv",20
+"Switzerland","sv",3
+"Turkey","sv",7
+"UK:Great Britain","sv",17
+"UK:Great Britain","ta",3
+"Finland","th",1
 "France","th",2
 "Germany","th",9
-"Italy","th",1
-"Norway","th",7
-"Poland","th",1
+"Ireland","th",3
+"Netherlands","th",7
+"Poland","th",3
 "Russia","th",3
+"Spain","th",1
 "Sweden","th",4
-"Switzerland","th",4
-"UK:Great Britain","th",15
-"Algeria","tl",1
+"Switzerland","th",2
+"UK:Great Britain","th",28
+"UK:Northern Ireland","th",1
+"Andorra","tl",1
 "Austria","tl",3
-"Belgium","tl",11
-"Bosnia and Herzegovina","tl",3
-"Croatia:Otok Hvar","tl",2
-"Cyprus:Northern Cyprus","tl",6
+"Belgium","tl",8
+"Bosnia and Herzegovina","tl",1
+"Bulgaria","tl",1
 "Czech Republic","tl",2
-"Denmark:Sjaelland","tl",3
-"Finland","tl",2
-"France","tl",85
-"Georgia","tl",1
-"Germany","tl",34
+"Denmark","tl",1
+"Finland","tl",3
+"France","tl",32
+"Germany","tl",22
+"Greece:Kerkira","tl",1
+"Greece:Kos","tl",1
 "Hungary","tl",3
-"Iceland","tl",4
-"Ireland","tl",22
-"Italy","tl",65
-"Italy:Sardinia","tl",1
-"Italy:Sicily","tl",7
-"Jersey","tl",1
-"Kosovo","tl",11
-"Latvia","tl",1
-"Lebanon","tl",12
-"Luxembourg","tl",1
-"Malta","tl",3
-"Montenegro","tl",3
-"Netherlands","tl",26
-"Norway","tl",4
-"Poland","tl",7
-"Portugal","tl",67
-"Romania","tl",2
-"Russia","tl",4
-"Serbia","tl",13
-"Slovakia","tl",1
-"Spain","tl",115
+"Iraq","tl",4
+"Ireland","tl",7
+"Isle of Man","tl",1
+"Italy","tl",30
+"Italy:Sardinia","tl",2
+"Kazakhstan","tl",1
+"Kosovo","tl",1
+"Lithuania","tl",1
+"Macedonia","tl",1
+"Montenegro","tl",1
+"Netherlands","tl",15
+"Poland","tl",5
+"Portugal","tl",15
+"Romania","tl",3
+"Russia","tl",5
+"Serbia","tl",8
+"Slovenia","tl",1
+"Spain","tl",43
 "Sweden","tl",3
-"Switzerland","tl",3
-"Syria","tl",1
-"Turkey","tl",31
-"Turkey:North","tl",1
-"UK:Great Britain","tl",190
-"UK:Northern Ireland","tl",2
-"UK:Wales:Anglesey","tl",1
-"Ukraine","tl",2
+"Switzerland","tl",4
+"Turkey","tl",23
+"Turkey:North","tl",3
+"UK:Great Britain","tl",72
+"Ukraine","tl",4
+"Uzbekistan","tl",3
 "Albania","tr",1
-"Algeria","tr",3
-"Austria","tr",28
-"Belarus","tr",9
-"Belgium","tr",141
-"Bosnia and Herzegovina","tr",18
-"Bulgaria","tr",2
-"Cyprus:Northern Cyprus","tr",166
-"Czech Republic","tr",10
-"Denmark","tr",1
-"Denmark:Fyn","tr",2
-"Denmark:Sjaelland","tr",18
-"Estonia","tr",2
-"Finland","tr",6
-"France","tr",130
-"Georgia","tr",3
-"Germany","tr",239
-"Greece","tr",10
-"Hungary","tr",6
-"Iraq","tr",7
-"Ireland","tr",5
+"Algeria","tr",1
+"Armenia","tr",1
+"Austria","tr",27
+"Azerbaijan","tr",61
+"Belgium","tr",19
+"Bosnia and Herzegovina","tr",6
+"Bulgaria","tr",7
+"Czech Republic","tr",4
+"Denmark:Sjaelland","tr",1
+"France","tr",64
+"Georgia","tr",6
+"Germany","tr",134
+"Greece","tr",4
+"Greece:Kos","tr",1
+"Hungary","tr",12
+"Iceland","tr",1
+"Iran","tr",1
+"Iraq","tr",5
+"Ireland","tr",3
 "Italy","tr",28
 "Italy:Sardinia","tr",1
-"Kosovo","tr",12
-"Latvia","tr",1
-"Lebanon","tr",1
+"Kazakhstan","tr",4
 "Lithuania","tr",1
-"Macedonia","tr",20
-"Malta","tr",3
+"Macedonia","tr",7
+"Malta","tr",4
+"Moldova","tr",1
 "Montenegro","tr",2
-"Morocco","tr",6
-"Netherlands","tr",55
-"Norway","tr",9
-"Poland","tr",20
-"Portugal","tr",6
-"Romania","tr",18
-"Russia","tr",14
-"Serbia","tr",3
-"Slovakia","tr",1
-"Slovenia","tr",4
-"Spain","tr",42
-"Sweden","tr",31
-"Switzerland","tr",48
-"Syria","tr",1
-"Tunisia","tr",1
-"Turkey","tr",10097
-"Turkey:Gokceada","tr",3
-"Turkey:North","tr",4125
-"UK:Great Britain","tr",118
-"Ukraine","tr",19
-"Belarus","uk",5
-"Belgium","uk",1
-"Bulgaria","uk",2
+"Netherlands","tr",33
+"Norway","tr",1
+"Poland","tr",6
+"Portugal","tr",3
+"Romania","tr",2
+"Russia","tr",8
+"Serbia","tr",1
+"Spain","tr",45
+"Sweden","tr",7
+"Switzerland","tr",7
+"Syria","tr",3
+"Turkey","tr",5295
+"Turkey:North","tr",541
+"Turkmenistan","tr",1
+"UK:Great Britain","tr",86
+"Ukraine","tr",4
+"Uzbekistan","tr",1
+"Belarus","uk",4
 "Czech Republic","uk",1
-"Finland","uk",4
+"Finland","uk",1
 "France","uk",1
-"Germany","uk",8
-"Italy","uk",1
-"Latvia","uk",3
+"Germany","uk",7
+"Hungary","uk",1
+"Kazakhstan","uk",6
+"Latvia","uk",1
+"Lithuania","uk",1
 "Macedonia","uk",1
-"Netherlands","uk",5
-"Poland","uk",9
-"Portugal","uk",3
-"Russia","uk",43
-"Russia:32","uk",1
-"Serbia","uk",1
-"Spain","uk",1
+"Netherlands","uk",1
+"Portugal","uk",1
+"Russia","uk",35
+"Serbia","uk",2
+"Spain","uk",2
 "Sweden","uk",1
-"Turkey","uk",1
 "UK:Great Britain","uk",1
-"Ukraine","uk",312
+"Ukraine","uk",193
+"Uzbekistan","uk",2
+"Afghanistan","und",4
 "Albania","und",20
-"Algeria","und",67
-"Andorra","und",7
-"Austria","und",53
-"Belarus","und",32
-"Belgium","und",185
-"Bosnia and Herzegovina","und",145
-"Bulgaria","und",24
-"Croatia","und",7
-"Croatia:Otok Hvar","und",6
-"Cyprus","und",1
-"Cyprus:Northern Cyprus","und",27
-"Czech Republic","und",45
-"Denmark","und",13
-"Denmark:8","und",1
-"Denmark:Sjaelland","und",53
-"Estonia","und",4
-"Finland","und",42
-"France","und",1644
-"France:Corsica","und",11
-"Georgia","und",9
-"Germany","und",612
-"Germany:Usedom","und",2
-"Greece","und",42
-"Greece:Crete","und",3
-"Greece:Kerkira","und",3
-"Hungary","und",29
-"Iceland","und",10
-"Iraq","und",89
-"Ireland","und",323
-"Isle of Man","und",5
-"Italy","und",901
-"Italy:Sardinia","und",15
-"Italy:Sicily","und",47
-"Kosovo","und",52
-"Latvia","und",14
-"Lebanon","und",78
-"Liechtenstein","und",9
-"Lithuania","und",3
-"Luxembourg","und",7
-"Macedonia","und",24
-"Malta","und",7
-"Monaco","und",3
-"Montenegro","und",131
-"Morocco","und",15
-"Netherlands","und",430
-"Norway","und",59
-"Norway:Senja","und",1
-"Poland","und",277
-"Portugal","und",702
-"Romania","und",19
-"Russia","und",271
+"Algeria","und",32
+"Andorra","und",2
+"Armenia","und",8
+"Austria","und",43
+"Azerbaijan","und",26
+"Belarus","und",19
+"Belgium","und",108
+"Bosnia and Herzegovina","und",150
+"Bulgaria","und",16
+"Croatia","und",6
+"Czech Republic","und",72
+"Denmark","und",7
+"Denmark:Sjaelland","und",21
+"Estonia","und",3
+"Finland","und",19
+"France","und",796
+"France:Corsica","und",3
+"Georgia","und",10
+"Germany","und",425
+"Greece","und",80
+"Greece:Evvoia","und",1
+"Greece:Rodhos","und",2
+"Guernsey","und",2
+"Hungary","und",19
+"Iceland","und",6
+"Iran","und",6
+"Iraq","und",41
+"Ireland","und",176
+"Isle of Man","und",6
+"Italy","und",527
+"Italy:Sardinia","und",21
+"Italy:Sicily","und",19
+"Jersey","und",2
+"Kazakhstan","und",13
+"Kosovo","und",14
+"Latvia","und",3
+"Liechtenstein","und",1
+"Lithuania","und",4
+"Luxembourg","und",1
+"Macedonia","und",11
+"Malta","und",14
+"Moldova","und",2
+"Montenegro","und",41
+"Netherlands","und",246
+"Netherlands:Texel","und",1
+"Norway","und",24
+"Pakistan","und",4
+"Poland","und",102
+"Portugal","und",157
+"Romania","und",17
+"Russia","und",241
 "Russia:32","und",4
-"Serbia","und",640
-"Slovakia","und",63
-"Slovenia","und",18
-"Spain","und",2091
-"Spain:Ibiza","und",6
-"Spain:Majorca","und",15
-"Spain:Minorca","und",2
-"Sweden","und",127
-"Sweden:Gotland","und",2
-"Sweden:Varmdo","und",1
-"Switzerland","und",129
-"Syria","und",8
-"Tunisia","und",21
-"Tunisia:Jerba","und",5
-"Turkey","und",1029
-"Turkey:North","und",103
-"UK:Great Britain","und",4829
-"UK:Isle of Wight","und",10
-"UK:Northern Ireland","und",118
-"UK:Scotland:Shetland Islands:Mainland","und",1
-"UK:Wales:Anglesey","und",3
-"Ukraine","und",124
-"Austria","ur",9
-"Denmark:Sjaelland","ur",1
-"France","ur",6
-"Germany","ur",28
-"Greece","ur",1
+"Serbia","und",512
+"Slovakia","und",34
+"Slovenia","und",13
+"Spain","und",1195
+"Spain:Ibiza","und",5
+"Spain:Majorca","und",7
+"Spain:Minorca","und",1
+"Sweden","und",48
+"Sweden:Gotland","und",1
+"Sweden:Varmdo","und",5
+"Switzerland","und",79
+"Syria","und",11
+"Tunisia","und",14
+"Turkey","und",649
+"Turkey:North","und",49
+"UK:Great Britain","und",2409
+"UK:Isle of Wight","und",8
+"UK:Northern Ireland","und",66
+"UK:Scotland:Isle of Lewis","und",1
+"UK:Scotland:Orkney Islands:Mainland","und",1
+"Ukraine","und",59
+"Uzbekistan","und",6
+"Austria","ur",1
+"France","ur",7
+"Germany","ur",4
 "Iraq","ur",1
-"Italy","ur",4
-"Spain","ur",4
-"Syria","ur",1
-"UK:Great Britain","ur",34
-"France","vi",2
-"Germany","vi",1
-"Italy","vi",2
-"Turkey","vi",1
-"UK:Great Britain","vi",2
-"UK:Northern Ireland","vi",1
-"Ukraine","vi",1
-"France","zh",7
-"Germany","zh",1
+"Italy","ur",7
+"Netherlands","ur",2
+"Pakistan","ur",5
+"Spain","ur",5
+"Turkey:North","ur",6
+"UK:Great Britain","ur",28
+"Czech Republic","vi",1
+"Spain","vi",1
+"Turkey","vi",7
+"UK:Great Britain","vi",1
+"France","zh",1
+"Germany","zh",3
+"Iceland","zh",1
+"Ireland","zh",1
 "Italy","zh",1
-"Netherlands","zh",1
-"Romania","zh",1
-"Spain","zh",1
-"UK:Great Britain","zh",12
+"Netherlands","zh",2
+"Russia","zh",1
+"Spain","zh",2
+"UK:Great Britain","zh",6
+"Ukraine","zh",1
