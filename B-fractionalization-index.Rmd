@@ -9,15 +9,33 @@ library(countrycode)
 
 country_index <- read_csv("country_language_distribution.csv")
 
+# I decide to deal with the name of country before caculate the index as some origins like UK:Northern Ireland"
+#"UK:Isle of Wight"  need to be aggregated together before calculation.
+
 index_countrycode <- countrycode(c(country_index$country_info), origin = 'country.name', destination = 'genc3c')
 country_index$country_info[!is.na(index_countrycode)] <- index_countrycode[!is.na(index_countrycode)]
-country_index$country_info[is.na(index_countrycode)] ="GBR"
+
+# After analysis the na turn from contrycode, I decide to
+# convert below to to UKR:
+
+#"UK:Northern Ireland"
+#"UK:Isle of Wight"
+#"UK:Scotland:Island of Arran"
+#"UK:Scotland:Island of Skye"
+#"UK:Scotland:Isle of Mull"
+#"UK:Scotland:Orkney Islands:Mainland"
+#"UK:Scotland:Orkney Islands:Westray"
+
+# convert below to NOR
+#"Norway:Svalbard:Edgeoya"
+
+country_index$country_info[is.na(index_countrycode)][-4] <- "GBR"
+country_index$country_info[is.na(index_countrycode)][4] <- "NOR"
 
 country_sum <- country_index %>% group_by(country_info) %>% summarise(SUM = sum(n))
 country_index <- country_index %>% left_join(country_sum)
 country_index <- country_index %>% group_by(country_info) %>% summarise(index = 1- sum((n/SUM)^2))
 country_index
-
 
 ```
 
@@ -55,6 +73,8 @@ my_metric
 
 ```{r}
 
+print(my_metric$index)
+print(my_metric$xls_index)
 correlation <- cor(my_metric$index, my_metric$xls_index,use = "complete.obs")
 correlation
 
