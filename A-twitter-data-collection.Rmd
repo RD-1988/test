@@ -5,7 +5,21 @@
 To avoid running this chunk of code every time you compile the file, you can either take this code to a separate R file, and just keep it here. (But make sure you explain that!) Or use the `cache` option in the R chunk, as shown below, to make sure it only re-runs after you change the code:
 
 ```{r, cache=TRUE}
+library(ROAuth)
+my_oauth <- list(consumer_key = "uwREWMYaio3ra80YB1mNCfTOl",
+   consumer_secret = "kCC8rbSBV9rFWizcjIGgHZJGCfcLpTqXnWAfa6qoluuxllI4o6",
+   access_token="1194987500856582145-JYTLVZHL1G2jSXXsTEFpe3ALGLPukh",
+   access_token_secret = "SPssH9H3T4LxBoj7kZ2gRAbfpwpP7Fn5GUqXBM2BNwWwU")
+save(my_oauth, file = "my_oauth.rda")
+load("my_oauth.rda")
 
+#set a geographical box and collect only the tweets that are coming from Europe
+library("rtweet")
+tweets <- stream_tweets(c(-25, 36, 66, 80), timeout = 21600 )
+library("maps")
+tweets <- lat_lng(tweets)
+head(tweets)
+#tweets
 ```
 
 In case you don't have a working token, [here](https://www.dropbox.com/s/n7l84t6vj95ue9e/europe-tweets.csv?dl=0)'s a link to a .csv file that contains nearly 200,000 geolocated tweets from Europe.
@@ -15,7 +29,13 @@ Please don't upload the .json file with the Tweets to GitHub!  We suggest you st
 2. Read the Tweets into R and compute some descriptive statistics. How many Tweets did you collect? Which are the most popular hashtags? (This step may take some time as well, feel free to use the cache function below to make sure you're not re-reading the file every time you compile.)
 
 ```{r, cache=TRUE}
-
+save_as_csv(tweets, "eurogeo_tweets.csv")
+```
+try another
+```{r}
+mydata <- read.csv(file="eurogeo_tweets.csv", header=TRUE, sep=",")
+mydata1 <- mydata[, c("user_id", "text", "lang", "lat", "lng")]
+write.csv(mydata1,"/Users/YSR/Desktop/MY472/assignment-3-betoriay-master/myeu_tweet.csv", row.names = FALSE)
 ```
 
 3. Now examine the language data. Which are the most popular languages? How many unique languages did you find? Can you determine which language code corresponds to tweets whose languages couldn't be predicted?
