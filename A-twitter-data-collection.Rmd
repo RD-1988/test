@@ -5,21 +5,31 @@
 To avoid running this chunk of code every time you compile the file, you can either take this code to a separate R file, and just keep it here. (But make sure you explain that!) Or use the `cache` option in the R chunk, as shown below, to make sure it only re-runs after you change the code:
 
 ```{r, cache=TRUE}
-library(ROAuth)
-my_oauth <- list(consumer_key = "uwREWMYaio3ra80YB1mNCfTOl",
-   consumer_secret = "kCC8rbSBV9rFWizcjIGgHZJGCfcLpTqXnWAfa6qoluuxllI4o6",
-   access_token="1194987500856582145-JYTLVZHL1G2jSXXsTEFpe3ALGLPukh",
-   access_token_secret = "SPssH9H3T4LxBoj7kZ2gRAbfpwpP7Fn5GUqXBM2BNwWwU")
-save(my_oauth, file = "my_oauth.rda")
-load("my_oauth.rda")
+#Our team scraped the data using tweet API in a separate file. We choose Europe. Therefore, we just paste the code here and does not run it.
 
-#set a geographical box and collect only the tweets that are coming from Europe
-library("rtweet")
-tweets <- stream_tweets(c(-25, 36, 66, 80), timeout = 21600 )
-library("maps")
-tweets <- lat_lng(tweets)
-head(tweets)
-#tweets
+#Authorization:
+#library(ROAuth)
+#my_oauth <- list(consumer_key = "uwREWMYaio3ra80YB1mNCfTOl",
+   #consumer_secret = "kCC8rbSBV9rFWizcjIGgHZJGCfcLpTqXnWAfa6qoluuxllI4o6",
+   #access_token="1194987500856582145-JYTLVZHL1G2jSXXsTEFpe3ALGLPukh",
+   #access_token_secret = "SPssH9H3T4LxBoj7kZ2gRAbfpwpP7Fn5GUqXBM2BNwWwU")
+#save(my_oauth, file = "my_oauth.rda")
+#load("my_oauth.rda")
+
+#set a geographical box and collect only the tweets that are coming from Europe:
+#library("rtweet")
+#tweets <- stream_tweets(c(-25, 36, 66, 80), timeout = 21600 )
+#using map package to gain longitude and latitude variable:
+#library("maps")
+#tweets <- lat_lng(tweets)
+
+#convert tweets into a csv file using rtweet built-in function:
+#save_as_csv(tweets, "eurogeo_tweets.csv")
+
+#change our csv into a smaller size: myeu_tweet.csv"
+#mydata <- read.csv(file="eurogeo_tweets.csv", header=TRUE, sep=",")
+#mydata1 <- mydata[, c("user_id", "text", "lang", "lat", "lng")]
+#write.csv(mydata1,"/Users/YSR/Desktop/MY472/assignment-3-betoriay-master/myeu_tweet.csv", row.names = FALSE)
 ```
 
 In case you don't have a working token, [here](https://www.dropbox.com/s/n7l84t6vj95ue9e/europe-tweets.csv?dl=0)'s a link to a .csv file that contains nearly 200,000 geolocated tweets from Europe.
@@ -27,56 +37,123 @@ In case you don't have a working token, [here](https://www.dropbox.com/s/n7l84t6
 Please don't upload the .json file with the Tweets to GitHub!  We suggest you store it somewhere else in your hard drive. This is the only RMarkdown file where you'll have to work with the entire dataset. You could also keep only the relevant variables that you need (similar as the .csv file above), and save only that (smaller) file.
 
 2. Read the Tweets into R and compute some descriptive statistics. How many Tweets did you collect? Which are the most popular hashtags? (This step may take some time as well, feel free to use the cache function below to make sure you're not re-reading the file every time you compile.)
-
-```{r, cache=TRUE}
-save_as_csv(tweets, "eurogeo_tweets.csv")
-```
-try another
 ```{r}
-mydata <- read.csv(file="eurogeo_tweets.csv", header=TRUE, sep=",")
-mydata1 <- mydata[, c("user_id", "text", "lang", "lat", "lng")]
-write.csv(mydata1,"/Users/YSR/Desktop/MY472/assignment-3-betoriay-master/myeu_tweet.csv", row.names = FALSE)
+eurotweets <- read.csv('myeu_tweet.csv', header = TRUE, stringsAsFactors = FALSE,sep=',', na.strings = "",encoding='utf-8')
+#head(eurotweets)
+#str(eurotweets)
+#The number of tweets that we collect
+tweet_number <- nrow(eurotweets)
+cat("the number of tweet we collect:", tweet_number,'\n')
+# Calculate the most popular hashtags 
+library("stringr")
+hashtag <- str_extract_all(eurotweets$text, '#[A-Za-z0-9_]+')
+hashtag <- unlist(hashtag)
+pophashtag <- sort(table(hashtag), decreasing = TRUE)[1]
+cat("most popular hashtag:", names(pophashtag))
+# According to the results the most popular one is #free  
 ```
 
 3. Now examine the language data. Which are the most popular languages? How many unique languages did you find? Can you determine which language code corresponds to tweets whose languages couldn't be predicted?
 
 ```{r}
+#extra the langdata in the dataset 
+langdata <- str_extract_all(eurotweets$lang, '[A-Za-z]+')
+langdata <- unlist(langdata)
 
+poplang <- sort(table(langdata), decreasing = TRUE)[1]
+cat("most popular language:", names(poplang),'\n')
+cat("times:", poplang, '\n')
+
+
+# According to the output the most popular language is english
+# calculate the unique languages
+num_unqi_lang <- length(unique(langdata))
+cat("Unique languages: ", num_unqi_lang, '\n')
+# there are 50 unique languages
+
+# Can you determine which language code corresponds to tweets whose languages couldn't be predicted?
+library(dplyr)
+unpredicted_lang <- filter(eurotweets, lang == 'und')
+cat("language code can not be predicted:", unpredicted_lang[1, "lang"])
+#the language code can not be predicted is 'und' 
 ```
 
 4. Produce a map of the region of the world where you collected the data that displays the language distribution by country. This map could take different forms - think which one could be best at conveying the relevant information.
 
-```{r}
+```{r, warning = FALSE}
 library(readxl)
 library(tidyverse)
 library(countrycode)
 library(maps)
+library(readr)
 tweets = read_csv("myeu_tweet.csv")
 library(maps)
+#in order to get all countries within the scope we want to draw the EU map
 country_info <- map.where(x = c(tweets$lng), y =c(tweets$lat))
+index_countrycode <- countrycode(c(country_info), origin = 'country.name', destination = 'genc3c')
+country_info[!is.na(index_countrycode)] <- index_countrycode[!is.na(index_countrycode)]
+country_info[is.na(index_countrycode)][-4] <- "GBR"
+country_info[is.na(index_countrycode)][4] <- "NOR"
+ur_country <- unique(countrycode(c(country_info), origin ='genc3c', destination = 'country.name'))
+#Draw the EU Map
+library(dplyr)
+require(maps)
+require(viridis)
+theme_set(
+  theme_void()
+  )
+world_map <- map_data("world")
+#EU countries in our data set
+all.eu.countries <- ur_country
+# Retrieve the map data
+all.eu.maps <- map_data("world", region = all.eu.countries)
+
+# Compute the centroid as the mean longitude and lattitude
+# Used as label coordinate for country's names
+region.lab.data <- all.eu.maps %>%
+  group_by(region) %>%
+  summarise(long = mean(long), lat = mean(lat))
+
+#draw an EU map
+euroe_map <- ggplot(all.eu.maps, aes(x = long, y = lat)) +
+  geom_polygon(aes( group = group, fill = region)) +
+  geom_text(aes(label = region), data = region.lab.data, size = 1.5, hjust = 0.5) +
+  scale_fill_viridis_d() + guides(fill = FALSE)
+
+#languange distribution
+geom_point(data = eurotweets, 
+    aes(x = lng, y = lat, color = eurotweets$lang), size = 0.5, alpha = 1/5) 
+tlang <- eurotweets$lang
+tlon <- eurotweets$lng
+tlat <- eurotweets$lat
+tmap <- data.frame(tlang, tlon, tlat)
+Language <- tlang
+lang_map <- euroe_map + 
+   geom_point(aes(x = tlon, y = tlat, colour = Language), tmap,
+              alpha = 0.3) + ggtitle("Language Distribution") + labs(fill = 'Language')
+lang_map
+                                   
 ```
 
 5. Finally, use the `map.where` function to identify the country from which each Tweet is coming from, and add it as a new variable to the data frame. Which countries produced the most and least tweets? 
-
 ```{r}
+eucountry <- map.where("world", eurotweets$lng, eurotweets$lat)
 
+cat("Country produces the most tweet:", names(sort(table(eucountry),
+                                             decreasing = TRUE)[1]), '\n')
+
+cat("Country produces the least tweet:", 
+    names(sort(table(eucountry), decreasing = FALSE)[1]))
 
 ```
-
-
 Then, create a data frame with three variables: `country`, `language`, and `n_tweets` (number of tweets for each combination of country and language). To make it smaller, you can keep only the rows for which `n_tweets` is greater than 0. Save this data frame into a file called `country_language_distribution.csv` -- we will work with it in part B. 
-
-
-
 For a clue on what this dataset should look like, see the `Language data` tab in `2003_fractionalization.xls`.
 
 ```{r}
- country_language_distribution <- cbind.data.frame(country_info,lang = tweets$lang)
+ country_language_distribution <- cbind.data.frame(country_info,lang = eurotweets$lang)
  df <- as_tibble(table(country_language_distribution))
  df <- df %>% filter(n>0)
  write.csv(df, "country_language_distribution.csv", row.names = FALSE)
- df = read_csv("country_language_distribution.csv")
-df$country_info
-
- df
+ country_language_distribution = read_csv("country_language_distribution.csv")
+ country_language_distribution
 ```
