@@ -2,38 +2,34 @@
 
 1. Read the .csv file you just created with the counts of Tweets per language and country. Use this dataset to compute an index of language fractionalization at the country level using the formula in equation (1) in the paper by Alesina et al (2003). Feel free to do this in any way that you consider most efficient, either using `dplyr` or with functions and loops.
 
-```{r}
+```{r, warning=FALSE,message=FALSE}
 library(readxl)
 library(tidyverse)
 library(countrycode)
+library(stats)
+library(gridExtra)
 
-country_index <- read_csv("country_language_distribution.csv")
+country_lang <- read_csv("country_language_distribution.csv")
+```
+As we think we should clean the country name before we calculete the number of tweets for 
+each country, In part A we have already used contrycode deal with the contry name, which aggregated region name like UK:ireland, UK:scotland to UKR.
+so here, we can caculated directly from the csv we get. 
 
-# I decide to deal with the name of country before caculate the index as some origins like UK:Northern Ireland"
-#"UK:Isle of Wight"  need to be aggregated together before calculation.
+```{r}
+# To get the total number of tweets for each country.
+country_sum <- country_lang %>% group_by(country_info) %>% summarise(SUM = sum(n))
+country_sum 
+```
+Spread the sum of each country by country name.
+```{r}
 
-index_countrycode <- countrycode(c(country_index$country_info), origin = 'country.name', destination = 'genc3c')
-country_index$country_info[!is.na(index_countrycode)] <- index_countrycode[!is.na(index_countrycode)]
+country_with_sum <- country_lang %>% left_join(country_sum)
+country_index <- country_with_sum[order(country_with_sum$country_info),]
+country_index
+```
+To caculate the index using the equation.
 
-# After analysis the na turn from contrycode, I decide to
-# convert below to to UKR:
-
-#"UK:Northern Ireland"
-#"UK:Isle of Wight"
-#"UK:Scotland:Island of Arran"
-#"UK:Scotland:Island of Skye"
-#"UK:Scotland:Isle of Mull"
-#"UK:Scotland:Orkney Islands:Mainland"
-#"UK:Scotland:Orkney Islands:Westray"
-
-# convert below to NOR
-#"Norway:Svalbard:Edgeoya"
-
-country_index$country_info[is.na(index_countrycode)][-4] <- "GBR"
-country_index$country_info[is.na(index_countrycode)][4] <- "NOR"
-
-country_sum <- country_index %>% group_by(country_info) %>% summarise(SUM = sum(n))
-country_index <- country_index %>% left_join(country_sum)
+```{r}
 country_index <- country_index %>% group_by(country_info) %>% summarise(index = 1- sum((n/SUM)^2))
 country_index
 
@@ -41,10 +37,21 @@ country_index
 
 2. Compute some descriptive statistics on this data, either through tables or graphs. Which countries have the highest and lowest levels of language fractionalization?
 
-```{r}
-lowest_country <- (country_index %>%filter(index >0 ) %>% arrange(index))[1,]
-highest_country <- (country_index %>%filter(index >0 ) %>% arrange(desc(index)))[1,]
 
+some statistics.
+```{r}
+cat("mean: ", mean(country_index$index),"\n")
+cat("median: ", median(country_index$index),"\n")
+cat("sd: ", sd(country_index$index))
+```
+######      FRO,GRL, TKM only have one type of languge in our tweeting data, so their index will be 0. GGY has the loweset level among all  positive countrirs which is 0.1723356.  
+###### MKD has the the highest level of language fractionalization which is 0.8470648.
+
+```{r}
+lowest_countries <- (country_index %>% arrange(index))[1:4,]
+highest_country <- (country_index %>% arrange(desc(index)))[1,]
+print(lowest_countries)
+print(highest_country)
 ```
 
 3. Read the first sheet in `2003_fractionalization.xls` into R. Keep only the country and language fractionalization columns. (You can export the .xls file into a .csv file in Excel first if that's esier.)
@@ -52,17 +59,36 @@ highest_country <- (country_index %>%filter(index >0 ) %>% arrange(desc(index)))
 Then, merge this data frame with the country-level fractionalization index you computed using Twitter data. This may be somewhat painful due to the different spellings of the countries. You can use the `countrycode` package to help you, or manually fix some of the country names so that they're the same across data sources. Throughout this process, check the sample size of the initial and final files to make sure you didn't drop any relevant countries.
 
 ```{r}
-
-
-
+# read the excel sheet in. 
 df <- read_xls("2003_fractionalization.xls", skip = 1)
+
 df <- (df %>% select(Country, Language))[-1,]
+
 df$Language <- as.numeric(df$Language)
-df_countrycode <- countrycode(c(df$Country), origin = 'country.name', destination = 'genc3c')
-index_countrycode <- countrycode(c(country_index$country_info), origin = 'country.name', destination = 'genc3c')
+
+df_countrycode <- countrycode(df$Country, origin = 'country.name', destination = 'genc3c')
+
 df$Country[!is.na(df_countrycode)] <- df_countrycode[!is.na(df_countrycode)]
-df$Country[is.na(df_countrycode)] <- df$Country[is.na(df_countrycode)][1:4]
+
+# To see what are include in NA 
+df$Country[is.na(df_countrycode)] 
+```
+
+
+Since there is no code for it, I kept the first 4 and drop the other 3.
+
+```{r}
+df$Country[is.na(df_countrycode)][5:7] <- NA
+
+cat("Number of row before drop row:", nrow(df), "\n") 
+
+# drop 
+df <- df[complete.cases(df$Country),]
+
+cat("Number of row after drop row:", nrow(df), "\n") 
+
 names(df) <- c("country_info", "xls_index")
+
 my_metric <- country_index %>% left_join(df, by = "country_info")
 
 my_metric
@@ -71,15 +97,88 @@ my_metric
 
 4. Compare your new metric with the measure on fractionalization from Alesina et al. What is the correlation between the two? For which countries do you find any differences? Can you explain why? Use any statistical or graphical methods you consider appropriate to answer this question.
 
+
+After observe the table, we decide to take 0.3 as threhold   
+
+value to show huge difference.
 ```{r}
 
-print(my_metric$index)
-print(my_metric$xls_index)
+difference <- 0.3 
+
 correlation <- cor(my_metric$index, my_metric$xls_index,use = "complete.obs")
-correlation
+
+cat("The correlation is:", correlation)
+
+with_difference <- my_metric %>% filter(abs(index-xls_index) > difference)
+
+with_difference
+```
+
+
+We consider number of tweets under 1000 is not representative 
+
+as the sample size is too small to draw a conclusion 
+```{r}
+new_df <- country_sum   %>% filter(country_info %in% with_difference$country_info)
+
+
+new_df %>% filter(SUM > 1000)
 
 ```
 
+
+
+Take GBR as an example to explor why there is difference.
+
+```{r}
+
+xls_data <- read_excel("2003_fractionalization.xls", skip = 5, sheet = 3)
+
+names(xls_data) <- c("Source", "Date", "Country", "Language", 
+                     "Number", "Percent", "Language_Index","Notes")
+
+xls_data <- xls_data %>% select(Country, Language, Percent)
+
+xls_data$Country <- countrycode(xls_data$Country, origin = 'country.name', destination = 'genc3c')
+
+xls_data
+GBR_xls <-xls_data %>% filter(Country == "GBR")
+GBR_tweet <- country_lang %>% filter(country_info == "GBR")
+GBR_tweet
+ 
+sum_n <-sum(GBR_tweet$n)
+p_en <- GBR_tweet$n[GBR_tweet$lang == "en"]/sum_n
+p_cy <- GBR_tweet$n[GBR_tweet$lang == "cy"]/sum_n
+
+p_other <- 1- p_en - p_cy 
+
+
+GBR_tweet <- tibble(Country = GBR_xls$Country,
+                  Language = GBR_xls$Language,
+                  Percent =c(p_en, 0, p_cy, p_other)*100)
+```
+
+After some data reshaping, we get the dataframe for detail language used 
+in the UK, bothe for the Alesina et al data and our data. See below 
+
+```{r}
+GBR_xls
+GBR_tweet 
+```
+
+To take a close look, we drew two pie chart.
+```{r}
+pie1 <- GBR_xls %>% ggplot(aes(x=1, y=Percent, fill = Language)) + geom_bar(stat = "identity")  + labs(title="GBR_xls") +  coord_polar("y", start=0) +   geom_text(aes(x=1.2,y=c(50,0,85,10),label=paste(Language,":",round(Percent/sum(Percent)*100,2),"%")),size=2)
+
+pie2 <- GBR_tweet %>% ggplot(aes(x=1, y=Percent, fill = Language)) + geom_bar(stat = "identity")  + labs(title="GBR_tweet") +  coord_polar("y", start=0) +   geom_text(aes(x=1.2,y=c(50,0,85,10),label=paste(Language,":",round(Percent/sum(Percent)*100,2),"%")),size=2)
+
+grid.arrange(pie1, pie2)
+```
+
+
+##### This difference may be caused by selection bias.  
+
+##### As we can see from the pie chart that in 2001, with Alesina et al, 97% of people speaking English, and in our tweet data, Engilish Tweet only contains 69%, which may because of the selection bias that, we selected tweets with GPS info, and it is quite posible that freign people who tour to the UK are more likely to share their location and tweets afterall, this is the whole point of travelling!
 
 Save the file to disk.
 
