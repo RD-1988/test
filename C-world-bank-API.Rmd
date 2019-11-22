@@ -5,9 +5,11 @@
 Write a function that will take an indicator code (e.g. `SP.POP.TOTL`) as input, query the API and parse the JSON output, and then return a clean data frame where each row is a country. If you're not able to figure it out, you can also use the `WDI` package. Feel free to take a look at the code for some clues on how to query the API (see e.g. [here](https://github.com/vincentarelbundock/WDI/blob/master/R/WDI.R)). 
 
 ```{r}
-library("WDI")
-# library(reshape2)
+library(countrycode)
+library(dplyr)
+library(tidyverse)
 library(tidyr)
+library("WDI")
 
 # Write a function that will take an indicator code 
 wbApi <- function(indicator, country, start, end){
@@ -23,18 +25,22 @@ wbApi <- function(indicator, country, start, end){
 
 ```{r}
 # import country code
-countryCode <- pull(.data = country_index, var = 1)
-countryCode["XKS"] <- "XKX"
+#countryCode <- pull(.data = country_index, var = 1)
+#countryCode["XKS"] <- "XKX"
 
-# data.worldbank.org.cn
-gdpPerCapita <- wbApi(indicator = "NY.GDP.PCAP.CD", start = 2018, end = 2018, country = c(countryCode)) #GDP per capita (current US$)
-colnames(gdpPerCapita)[3:length(colnames(gdpPerCapita))] <- paste( "gdp", colnames(gdpPerCapita)[3:length(colnames(gdpPerCapita))], sep = "")
+# metric for GDP per capita
+gdpPerCapita <- wbApi(indicator = "NY.GDP.PCAP.CD", country = "all", start = 2018, end = 2018) #GDP per capita (current US$)
+colnames(gdpPerCapita)[3:length(colnames(gdpPerCapita))] <- paste("gdp", colnames(gdpPerCapita)[3:length(colnames(gdpPerCapita))], sep = "")
+gdpPerCapita$iso3c <- countrycode(gdpPerCapita$country, origin = 'country.name', destination = 'genc3c')
 gdpPerCapita
 
 # another metric that you consider could be correlated to language fractionalization
-gnpPerCapita <- wbApi(indicator = "NY.GNP.PCAP.CD", start = 2018, end = 2018, country =  c(countryCode)) #GNI per capita, Atlas method (current US$)
+gnpPerCapita <- wbApi(indicator = "NY.GNP.PCAP.CD", country =  "all", start = 2018, end = 2018) #GNI per capita, Atlas method (current US$)
 colnames(gnpPerCapita)[3:length(colnames(gnpPerCapita))] <- paste("gnp", colnames(gnpPerCapita)[3:length(colnames(gnpPerCapita))], sep = "")
+gnpPerCapita$iso3c <- countrycode(gnpPerCapita$country, origin = 'country.name', destination = 'genc3c')
 gnpPerCapita
+
+#c(countryCode)
 
 # combine into a metrix
 countryLevelData <- merge(gdpPerCapita, gnpPerCapita, by="country")
@@ -43,10 +49,9 @@ countryLevelData <- merge(gdpPerCapita, gnpPerCapita, by="country")
 3. Merge this new country-level dataset with the dataset you created at the end of part B. As before, you may need to fix some of the country names to ensure that all countries can be merged.
 
 ```{r}
-merge_my_metric <- my_metric
-merge_my_metric$country_info <- gsub('.{1}$', '', merge_my_metric$country_info)
-names(merge_my_metric)[1] <- "iso2c.x"
-mergedData <- merge(merge_my_metric, countryLevelData, by= "iso2c.x")
+my_metric <- read_csv("my_metric.csv")
+names(my_metric)[2] <- "iso3c.x"
+mergedData <- merge(my_metric, countryLevelData, by= "iso3c.x") # the Bailiwick of Jersey & Guernsey were not merged as these two crown dependencies are not accounted as countries by the world bank
 
 # remove irrelevant line
 finalData <- subset(mergedData, select = c("country", "index", "xls_index",  "gdp2018", "gnp2018"))
@@ -55,7 +60,7 @@ finalData <- subset(mergedData, select = c("country", "index", "xls_index",  "gd
 4. What can you learn about the relationship between language fractionalization and economic development from this new dataset? Can you replicate the findings in Tables 5 and 8 of the paper? Use any statistical or graphic analyses that you consider appropriate to answer this question.
 
 ```{r}
-cor(finalData $gdp2018, finalData $index, use = "complete.obs")
-cor(finalData $gnp2018, finalData $index, use = "complete.obs")
+cor(finalData$gdp2018, finalData$index, use = "complete.obs")
+cor(finalData$gnp2018, finalData$index, use = "complete.obs")
 ```
-I replicate the findings from the paper. There is a very small correlation between language fractionalization and economics development from this new dataset.
+I replicate the findings from the paper. There is a slight correlation between language fractionalization and economics development from this new dataset.
